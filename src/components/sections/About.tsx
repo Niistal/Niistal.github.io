@@ -3,16 +3,16 @@ import { SectionHeading } from "../ui/Section";
 
 const bullets = [
   {
-    title: "Enterprise first",
-    text: "I specialize in Microsoft-ecosystem business software: WinForms, C#/VB.NET, SQL Server, T-SQL, stored procedures, ODBC, APIs and enterprise integrations.",
+    title: "Day job — ERP & business apps",
+    text: "C#, VB.NET, WinForms and SQL Server at GIP 2019: maintenance, business rules, integrations and legacy modernization.",
   },
   {
-    title: "Beyond the ERP",
-    text: "Personal R&D in developer tooling, cybersecurity, AI, autonomous agents, Big Data, mobile apps, automation and infrastructure.",
+    title: "After hours",
+    text: "Developer tooling, cybersecurity, local-first AI and agents, Big Data, mobile apps and automation.",
   },
   {
-    title: "How I build",
-    text: "Secure by design, local-first when it makes sense, observable, maintainable, scalable and automation-first.",
+    title: "How I work",
+    text: "Small diffs, tested contracts, secure defaults — and boring technology wherever it counts.",
   },
 ];
 
@@ -20,9 +20,9 @@ export function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-8 sm:py-24">
       <SectionHeading
-        eyebrow="About me"
-        title="I build real software for real systems."
-        description="Full Stack developer specialized in enterprise software and the Microsoft ecosystem. I work with real applications, databases, APIs, architecture, automation and software modernization."
+        eyebrow="About"
+        title="Enterprise software is my day job."
+        description="I work on real business applications: desktop apps, databases, APIs and integrations on the Microsoft stack. Outside work I go deeper into security, automation, data and AI."
       />
       <div className="mt-10 grid gap-4 md:grid-cols-3">
         {bullets.map((b, i) => (

@@ -7,8 +7,8 @@ export function Experience() {
     <section id="experience" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-8 sm:py-24">
       <SectionHeading
         eyebrow="Experience"
-        title="Real work, real systems."
-        description="Professional experience as stated in my CV — enterprise software, commercial apps and international practice. No invented roles or companies."
+        title="Where I've worked."
+        description="Taken from my CV: enterprise software, commercial apps and an Erasmus+ stint in Ireland."
       />
       <ol className="mt-10 space-y-4">
         {experience.map((job, i) => (

@@ -6,9 +6,9 @@ export function Stack() {
   return (
     <section id="stack" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-8 sm:py-24">
       <SectionHeading
-        eyebrow="Tech stack"
-        title="Grouped by domain, not a badge cloud."
-        description="What I actually use across enterprise software, tooling, security, data and AI."
+        eyebrow="Stack"
+        title="Tools I actually use."
+        description="Grouped by area. Everything here has shipped something."
       />
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {specializations.map((s, i) => (

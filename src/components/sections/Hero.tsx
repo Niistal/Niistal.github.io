@@ -24,9 +24,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <p className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white/70 px-3 py-1.5 text-xs font-medium text-zinc-700 backdrop-blur dark:border-white/10 dark:bg-white/[0.05] dark:text-zinc-300">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true" />
-            {siteConfig.availability}
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-zinc-500 dark:text-zinc-400">
+            {siteConfig.location} · {siteConfig.role}
           </p>
           <h1 className="mt-6 text-5xl font-semibold tracking-tight text-zinc-950 sm:text-7xl dark:text-[#F7F7FA]">
             Iker <span className="bg-gradient-to-r from-[#8B1E4D] via-[#7C4DFF] to-[#3B82F6] bg-clip-text text-transparent">/ Niistal</span>
@@ -105,9 +104,9 @@ export function Hero() {
             </div>
             <div className="mt-4 rounded-2xl border border-zinc-200 bg-white/70 p-4 backdrop-blur dark:border-white/10 dark:bg-white/[0.04]">
               <p className="font-mono text-xs text-zinc-600 dark:text-zinc-400">
-                <span className="text-fuchsia-500">$</span> whoami → <span className="text-zinc-900 dark:text-white">full-stack · .NET · AI</span>
+                GIP 2019 S.L. — Enterprise software &amp; ERP
               </p>
-              <p className="mt-1 font-mono text-xs text-zinc-500 dark:text-zinc-500">secure · observable · maintainable</p>
+              <p className="mt-1 font-mono text-xs text-zinc-500 dark:text-zinc-500">Elgoibar, Gipuzkoa</p>
             </div>
           </div>
         </motion.div>

@@ -42,8 +42,8 @@ export function GitHubSection() {
     <section id="github" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-8 sm:py-24">
       <SectionHeading
         eyebrow="GitHub"
-        title="Public activity, verified only."
-        description="Real public data via the GitHub API when available. If the API is unreachable, no stats are invented — just the profile link."
+        title="Public code."
+        description="Numbers below come straight from the GitHub API."
       />
       <Reveal className="mt-8">
         <div className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-zinc-200 bg-white p-6 sm:flex-row sm:items-center sm:p-8 dark:border-white/[0.08] dark:bg-white/[0.04]">
@@ -58,7 +58,7 @@ export function GitHubSection() {
             ) : (
               <p className="mt-3 max-w-md text-sm text-zinc-600 dark:text-[#A7A7B5]">
                 {failed
-                  ? "GitHub API unreachable right now — stats hidden rather than invented."
+                  ? "GitHub is not responding right now — here's the profile link instead."
                   : "Loading public GitHub data…"}
               </p>
             )}

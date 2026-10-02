@@ -4,20 +4,20 @@ export const siteConfig = {
   username: "Niistal",
   logo: "NIISTAL.DEV",
   headline: "Full Stack Software Engineer",
-  subheadline: "Building secure software, developer tools and intelligent systems.",
+  subheadline: "Enterprise .NET software, cybersecurity and applied AI.",
   tagline: ".NET · DevSecOps · Cybersecurity · Data · AI · Agentic Systems",
   description:
-    "Full Stack Software Engineer focused on .NET, enterprise software, cybersecurity, DevSecOps, Data and AI. I build enterprise ERP software, cross-platform apps, developer tooling and AI systems oriented to security and automation.",
+    "I'm Iker, a Full Stack developer from Elgoibar (Gipuzkoa). By day I build ERP and business software on the Microsoft stack at GIP 2019 — C#, VB.NET, WinForms, SQL Server. After hours: cybersecurity, developer tooling and local-first AI.",
   url: "https://niistal.github.io",
   locale: "en_US",
   location: "Elgoibar, Gipuzkoa",
+  role: "Software Engineer at GIP 2019 S.L.",
   github: "https://github.com/Niistal",
   githubUsername: "Niistal",
   // Leave empty to hide the button — do not invent URLs.
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/ikernistal/",
   email: "ikernistal7@gmail.com",
   cvUrl: "/cv/CV_Iker_Nistal_2026.pdf",
-  availability: "Available for collaboration",
   avatar: "/images/avatar.webp",
 } as const;
 
@@ -26,7 +26,7 @@ export const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Stack", href: "#stack" },
-  { label: "Journey", href: "#journey" },
+  { label: "Background", href: "#journey" },
   { label: "GitHub", href: "#github" },
   { label: "Contact", href: "#contact" },
 ] as const;

@@ -22,7 +22,7 @@ export type Job = {
   current?: boolean;
 };
 
-// Real experience — taken from the CV, no invented entries.
+// Experience and education below match the CV.
 export const experience: Job[] = [
   {
     role: "Desarrollador de software / FP Dual",
@@ -62,7 +62,7 @@ export type Education = {
   detail: string;
 };
 
-// Real education — taken from the CV.
+// Education below matches the CV.
 export const education: Education[] = [
   {
     title: "Especialización en Inteligencia Artificial y Big Data",

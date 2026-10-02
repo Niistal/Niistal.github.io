@@ -19,7 +19,7 @@ export function Contact() {
               align="center"
               eyebrow="Contact"
               title="Interested in working together?"
-              description="Interested in working together or discussing software, security, AI or engineering?"
+              description="Software, security, AI or engineering — my inbox is open."
             />
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <a

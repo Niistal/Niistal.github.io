@@ -8,9 +8,9 @@ export function Journey() {
       <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <SectionHeading
-            eyebrow="Journey"
-            title="Technical evolution."
-            description="No dates invented — just the path from systems to agentic systems."
+            eyebrow="Background"
+            title="How I got here."
+            description="From networks and systems to AI agents."
           />
           <ol className="mt-8 space-y-0 border-l border-zinc-200 pl-0 dark:border-white/10">
             {journey.map((j, i) => (
@@ -28,7 +28,7 @@ export function Journey() {
           </ol>
         </div>
         <div>
-          <SectionHeading eyebrow="Education" title="Formación." />
+          <SectionHeading eyebrow="Education" title="What I studied, in order." />
           <ul className="mt-8 space-y-3">
             {education.map((e) => (
               <Reveal key={e.title}>
@@ -40,7 +40,7 @@ export function Journey() {
             ))}
           </ul>
           <p className="mt-4 text-xs leading-relaxed text-zinc-500">
-            Education supports the work — the portfolio leads with software I actually build.
+            Titles get you interviews. Shipped software gets you hired.
           </p>
         </div>
       </div>

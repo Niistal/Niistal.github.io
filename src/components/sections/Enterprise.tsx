@@ -8,8 +8,8 @@ export function Enterprise() {
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
         <SectionHeading
           eyebrow="Enterprise software"
-          title="ERP & business systems"
-          description="I professionally build enterprise / ERP software in the Microsoft ecosystem. No proprietary code or confidential company information is shared here — only the stack and concepts."
+          title="ERP & business systems."
+          description="What I do at GIP 2019, in general terms. Employer details stay private — this is the stack and the kind of problems."
         />
         <div className="mt-10 grid gap-4 lg:grid-cols-[1fr_1fr]">
           <Reveal>

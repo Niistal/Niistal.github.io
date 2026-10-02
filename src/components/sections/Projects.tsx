@@ -6,9 +6,9 @@ export function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl scroll-mt-24 px-5 py-16 sm:px-8 sm:py-24">
       <SectionHeading
-        eyebrow="Featured projects"
-        title="Selected work"
-        description="Public projects only. Private enterprise work is described conceptually in the Enterprise section — no proprietary code or internal details."
+        eyebrow="Projects"
+        title="Things I build in public."
+        description="My own work, maintained in my own time. Anything done for an employer stays private."
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         {projects.map((p, i) => (
