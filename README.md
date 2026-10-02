@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NIISTAL — Portfolio
 
-## Getting Started
+Professional portfolio for **Iker Nistal Fernandez** — Full Stack Software Engineer focused on .NET, enterprise software, cybersecurity, DevSecOps, Data and AI.
 
-First, run the development server:
+Live: **https://IKERNISTAL.github.io** · GitHub: **https://github.com/Niistal**
+
+## Stack
+
+Next.js · React · TypeScript (strict) · Tailwind CSS v4 · Framer Motion — statically exported (`output: "export"`), so it runs on GitHub Pages, Cloudflare Pages, Vercel or any static host.
+
+## Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run lint
+npx tsc --noEmit
+npm run build    # generates ./out
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Publish on GitHub Pages (easiest, free)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Create a **public** repo named exactly `IKERNISTAL.github.io` (replace with your username, same casing doesn't matter).
+2. Push this project to branch `main`:
+   ```bash
+   git init
+   git add .
+   git commit -m "Portfolio"
+   git branch -M main
+   git remote add origin https://github.com/IKERNISTAL/IKERNISTAL.github.io.git
+   git push -u origin main
+   ```
+3. In the repo: **Settings → Pages → Source: GitHub Actions**.
+4. Every push to `main` redeploys via `.github/workflows/deploy.yml`. Your site appears at `https://IKERNISTAL.github.io`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To use the custom domain `niistal.dev` later: repo Settings → Pages → Custom domain → add a `CNAME` file — no code changes needed.
 
-## Learn More
+## Edit your info
 
-To learn more about Next.js, take a look at the following resources:
+All editable content lives in `src/data/` — no hardcoded copy in components:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/data/profile.ts` — name, headline, location, `github`, `linkedin`, `email`, `cvUrl`, avatar, nav, languages
+- `src/data/projects.ts` — projects (name, description, stack, badges, status, links)
+- `src/data/skills.ts` — skill groups + specialization cards
+- `src/data/experience.ts` — real experience, education, journey, principles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contact buttons: if `linkedin` is empty, that button is not rendered. The CV PDF lives at `public/cv/CV_Iker_Nistal_2026.pdf` — replace it with new versions keeping the same filename.
 
-## Deploy on Vercel
+## Avatar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Place your anime/developer avatar at:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+public/images/avatar.webp   # square, min 512×512
+```
+
+If missing, a branded `N` placeholder renders automatically.
+
+## GitHub section
+
+Fetches `https://api.github.com/users/Niistal` client-side. If the API fails, no stats are invented — only **View GitHub Profile** is shown.
+
+## Notes
+
+- Static export: no server features. The OG image is a pre-generated `public/og.png` (1200×630, Bordeaux → purple → blue).
+- GitHub Pages cannot send custom server headers — CSP/Referrer-Policy are enforced via `<meta>` tags in `app/layout.tsx`.
+- No secrets, tokens, private endpoints or analytics by default.
