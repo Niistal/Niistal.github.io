@@ -8,7 +8,7 @@ export const siteConfig = {
   tagline: ".NET · DevSecOps · Cybersecurity · Data · AI · Agentic Systems",
   description:
     "Full Stack Software Engineer focused on .NET, enterprise software, cybersecurity, DevSecOps, Data and AI. I build enterprise ERP software, cross-platform apps, developer tooling and AI systems oriented to security and automation.",
-  url: "https://ikernistal.github.io",
+  url: "https://niistal.github.io",
   locale: "en_US",
   location: "Elgoibar, Gipuzkoa",
   github: "https://github.com/Niistal",

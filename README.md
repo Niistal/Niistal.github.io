@@ -2,7 +2,7 @@
 
 Professional portfolio for **Iker Nistal Fernandez** — Full Stack Software Engineer focused on .NET, enterprise software, cybersecurity, DevSecOps, Data and AI.
 
-Live: **https://IKERNISTAL.github.io** · GitHub: **https://github.com/Niistal**
+Live: **https://niistal.github.io** · GitHub: **https://github.com/Niistal**
 
 ## Stack
 
@@ -31,7 +31,7 @@ npm run build    # generates ./out
    git push -u origin main
    ```
 3. In the repo: **Settings → Pages → Source: GitHub Actions**.
-4. Every push to `main` redeploys via `.github/workflows/deploy.yml`. Your site appears at `https://IKERNISTAL.github.io`.
+4. Every push to `main` redeploys via `.github/workflows/deploy.yml`. Your site appears at `https://niistal.github.io` (GitHub derives the user-site URL from your username `Niistal`).
 
 To use the custom domain `niistal.dev` later: repo Settings → Pages → Custom domain → add a `CNAME` file — no code changes needed.
 
