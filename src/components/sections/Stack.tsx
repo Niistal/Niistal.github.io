@@ -13,7 +13,7 @@ export function Stack() {
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {specializations.map((s, i) => (
           <Reveal key={s.title} delay={(i % 3) * 0.07}>
-            <article className="h-full rounded-2xl border border-zinc-200 bg-white p-6 dark:border-white/[0.08] dark:bg-white/[0.04]">
+            <article className="card-lift h-full rounded-2xl border border-zinc-200 bg-white p-6 dark:border-white/[0.08] dark:bg-white/[0.04]">
               <h3 className="text-base font-semibold text-zinc-900 dark:text-white">{s.title}</h3>
               <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-500">{s.description}</p>
               <ul className="mt-3 space-y-1.5">

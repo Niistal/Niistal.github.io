@@ -45,7 +45,7 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="#projects"
-              className="rounded-full bg-gradient-to-r from-[#6D163A] via-[#6C3BFF] to-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/20 transition hover:opacity-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-500"
+              className="btn-shine rounded-full bg-gradient-to-r from-[#6D163A] via-[#6C3BFF] to-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-purple-900/20 transition hover:opacity-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-500"
             >
               View Projects
             </Link>
@@ -59,9 +59,9 @@ export function Hero() {
             </Link>
             <Link
               href="#contact"
-              className="rounded-full border border-transparent px-6 py-3 text-sm font-semibold text-zinc-700 transition hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-white"
+              className="arrow-nudge rounded-full border border-transparent px-6 py-3 text-sm font-semibold text-zinc-700 transition hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-white"
             >
-              Contact →
+              Contact <span className="arr" aria-hidden="true">→</span>
             </Link>
             <a
               href={siteConfig.cvUrl}
@@ -79,9 +79,9 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="mx-auto w-full max-w-[300px]"
         >
-          <div className="relative">
-            <div aria-hidden="true" className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#6D163A]/40 via-[#6C3BFF]/30 to-[#2563EB]/30 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[1.75rem] border border-white/20 bg-gradient-to-br from-[#5B1028] via-[#2a1440] to-[#0f1e4d] p-1.5 shadow-2xl">
+          <div className="group/avatar relative">
+            <div aria-hidden="true" className="avatar-aura absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#6D163A]/40 via-[#6C3BFF]/30 to-[#2563EB]/30 blur-2xl" />
+            <div className="avatar-frame relative overflow-hidden rounded-[1.75rem] border border-white/20 bg-gradient-to-br from-[#5B1028] via-[#2a1440] to-[#0f1e4d] p-1.5 shadow-2xl">
               <div className="relative aspect-square overflow-hidden rounded-[1.4rem] bg-[#120A10]">
                 {imgOk ? (
                   <Image

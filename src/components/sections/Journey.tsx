@@ -32,7 +32,7 @@ export function Journey() {
           <ul className="mt-8 space-y-3">
             {education.map((e) => (
               <Reveal key={e.title}>
-                <li className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-white/[0.08] dark:bg-white/[0.04]">
+                <li className="card-lift rounded-xl border border-zinc-200 bg-white p-4 dark:border-white/[0.08] dark:bg-white/[0.04]">
                   <p className="text-sm font-semibold text-zinc-900 dark:text-white">{e.title}</p>
                   <p className="mt-0.5 text-xs text-zinc-500">{e.detail}</p>
                 </li>
@@ -50,7 +50,7 @@ export function Journey() {
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {principles.map((p) => (
             <Reveal key={p.title}>
-              <div className="rounded-xl border border-zinc-200 bg-white px-4 py-3.5 dark:border-white/[0.08] dark:bg-white/[0.03]">
+              <div className="card-lift rounded-xl border border-zinc-200 bg-white px-4 py-3.5 dark:border-white/[0.08] dark:bg-white/[0.03]">
                 <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">{p.title}</p>
                 <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-500">{p.detail}</p>
               </div>

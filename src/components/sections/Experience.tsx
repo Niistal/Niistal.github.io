@@ -13,7 +13,7 @@ export function Experience() {
       <ol className="mt-10 space-y-4">
         {experience.map((job, i) => (
           <Reveal key={`${job.company}-${i}`} delay={i * 0.06}>
-            <article className="rounded-2xl border border-zinc-200 bg-white p-6 sm:p-7 dark:border-white/[0.08] dark:bg-white/[0.04]">
+            <article className="card-lift rounded-2xl border border-zinc-200 bg-white p-6 sm:p-7 dark:border-white/[0.08] dark:bg-white/[0.04]">
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div>
                   <h3 className="text-lg font-semibold text-zinc-900 dark:text-white">{job.role}</h3>

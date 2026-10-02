@@ -68,7 +68,7 @@ export function GitHubSection() {
             href={siteConfig.github}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
+            className="btn-shine rounded-full bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-700 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
           >
             View GitHub Profile
           </a>

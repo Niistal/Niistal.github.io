@@ -40,7 +40,7 @@ export function Navbar() {
             <li key={l.href}>
               <Link
                 href={l.href}
-                className="text-sm text-zinc-600 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
+                className="nav-link text-sm text-zinc-600 transition-colors hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white"
               >
                 {l.label}
               </Link>
