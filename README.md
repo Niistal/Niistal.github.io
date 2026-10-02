@@ -20,14 +20,14 @@ npm run build    # generates ./out
 
 ## Publish on GitHub Pages (easiest, free)
 
-1. Create a **public** repo named exactly `IKERNISTAL.github.io` (replace with your username, same casing doesn't matter).
+1. Create a **public** repo named exactly like your account + `.github.io` — in your case `Niistal.github.io` (respect the account casing, otherwise GitHub serves it as a project page instead of the user site).
 2. Push this project to branch `main`:
    ```bash
    git init
    git add .
    git commit -m "Portfolio"
    git branch -M main
-   git remote add origin https://github.com/IKERNISTAL/IKERNISTAL.github.io.git
+   git remote add origin https://github.com/Niistal/Niistal.github.io.git
    git push -u origin main
    ```
 3. In the repo: **Settings → Pages → Source: GitHub Actions**.
