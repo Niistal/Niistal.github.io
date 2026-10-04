@@ -1,10 +1,4 @@
-# Deploy to GitHub Pages (https://IKERNISTAL.github.io)
-#
-# Setup (once):
-#   1. Create a PUBLIC repo named exactly: IKERNISTAL.github.io
-#   2. Push this project to it (branch: main)
-#   3. Repo → Settings → Pages → Source: "GitHub Actions"
-# Every push to main redeploys automatically.
+# Publish the static portfolio with existing public assets.
 name: Deploy to GitHub Pages
 
 on:
@@ -27,15 +21,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-      - name: Install dependencies
-        run: npm ci
-      - name: Build static site
-        run: npm run build
+      - name: Validate and assemble static portfolio
+        run: |
+          node --check portfolio/app.js
+          test -s portfolio/index.html
+          test -s public/images/avatar.webp
+          test -s public/cv/CV_Iker_Nistal_2026.pdf
+          mkdir -p out
+          cp -a public/. out/
+          cp -a portfolio/. out/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
