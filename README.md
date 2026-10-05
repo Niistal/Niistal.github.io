@@ -1,67 +1,70 @@
-# NIISTAL — Portfolio
+# Iker / Niistal — Portfolio
 
-Professional portfolio for **Iker Nistal Fernandez** — Full Stack Software Engineer focused on .NET, enterprise software, cybersecurity, DevSecOps, Data and AI.
+Portfolio profesional de **Iker Nistal Fernandez**, desarrollador de software centrado en aplicaciones empresariales, .NET, integraciones, ciberseguridad, automatización, datos e inteligencia artificial.
 
-Live: **https://niistal.github.io** · GitHub: **https://github.com/Niistal**
+**[Visitar el portfolio →](https://niistal.github.io/)**
 
-## Stack
+## Qué encontrarás
 
-Next.js · React · TypeScript (strict) · Tailwind CSS v4 · Framer Motion — statically exported (`output: "export"`), so it runs on GitHub Pages, Cloudflare Pages, Vercel or any static host.
+- Experiencia profesional en desarrollo de software empresarial con C#, VB.NET, .NET y SQL Server.
+- Proyectos con contexto, arquitectura, decisiones técnicas y estado de desarrollo.
+- Capacidades técnicas y formación en DAM, Ciberseguridad y Big Data e Inteligencia Artificial.
+- Servicios de desarrollo a medida y contacto diferenciado para oportunidades profesionales y proyectos.
+- Enlaces a GitHub, LinkedIn y descarga del CV.
 
-## Run
+## Experiencia y proyectos
 
-```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run lint
-npx tsc --noEmit
-npm run build    # generates ./out
+Mi trabajo en **Gestión Integral de Procesos 2019 S.L. / GIP** está relacionado con aplicaciones ERP y de gestión en el entorno de SITAB, bases de datos e integración de procesos.
+
+El portfolio también presenta proyectos personales y de aprendizaje:
+
+| Proyecto | Enfoque |
+| --- | --- |
+| TerminalAI | Plataforma de agentes local-first con ejecución controlada. En desarrollo. |
+| Niistal Optimizer | Automatización, herramientas de sistema y hardening. |
+| CNC Guard IA | Exploración de datos industriales y mantenimiento preventivo. Prototipo / investigación. |
+| Android Business App | Aplicación empresarial con persistencia local y sincronización. |
+| TPV / Business Management | Gestión comercial con Java, JavaFX, PostgreSQL y generación de PDF. |
+
+Las funcionalidades en desarrollo se identifican como tales. La descripción de un proyecto no implica que su código esté disponible públicamente.
+
+## El sitio
+
+La versión publicada utiliza **HTML, CSS y JavaScript**, con recursos estáticos y despliegue mediante **GitHub Actions → GitHub Pages**.
+
+Incluye:
+
+- Español e inglés, con selector de idioma y preferencia guardada.
+- Tema oscuro y claro.
+- Diseño adaptable a escritorio y móvil.
+- Proyectos con información técnica ampliable.
+- Formularios que preparan una consulta y abren la aplicación de correo, con opción de copiar el mensaje. El envío se completa desde el cliente de correo del visitante.
+
+## Estructura actual
+
+```text
+portfolio/
+  index.html       Página y contenido principal
+  style.css        Diseño, temas y estilos responsive
+  app.js           Proyectos e interacciones del formulario
+  i18n.js          Traducción y selector de idioma
+
+public/
+  images/          Fotografía
+  cv/              Currículum PDF
+  og.png           Imagen para compartir el enlace
+  favicon.svg      Icono del sitio
+
+.github/workflows/
+  deploy.yml       Validación y publicación en GitHub Pages
 ```
 
-## Publish on GitHub Pages (easiest, free)
+El despliegue reúne los archivos de `portfolio/` y `public/` en `out/` y publica ese resultado. Los cambios en `main` activan el proceso automáticamente.
 
-1. Create a **public** repo named exactly like your account + `.github.io` — in your case `Niistal.github.io` (respect the account casing, otherwise GitHub serves it as a project page instead of the user site).
-2. Push this project to branch `main`:
-   ```bash
-   git init
-   git add .
-   git commit -m "Portfolio"
-   git branch -M main
-   git remote add origin https://github.com/Niistal/Niistal.github.io.git
-   git push -u origin main
-   ```
-3. In the repo: **Settings → Pages → Source: GitHub Actions**.
-4. Every push to `main` redeploys via `.github/workflows/deploy.yml`. Your site appears at `https://niistal.github.io` (GitHub derives the user-site URL from your username `Niistal`).
+El repositorio conserva la implementación anterior de Next.js en `src/` y sus archivos de configuración. Esa implementación no participa en el despliegue actual.
 
-To use the custom domain `niistal.dev` later: repo Settings → Pages → Custom domain → add a `CNAME` file — no code changes needed.
+## Contacto
 
-## Edit your info
-
-All editable content lives in `src/data/` — no hardcoded copy in components:
-
-- `src/data/profile.ts` — name, headline, location, `github`, `linkedin`, `email`, `cvUrl`, avatar, nav, languages
-- `src/data/projects.ts` — projects (name, description, stack, badges, status, links)
-- `src/data/skills.ts` — skill groups + specialization cards
-- `src/data/experience.ts` — real experience, education, journey, principles
-
-Contact buttons: if `linkedin` is empty, that button is not rendered. The CV PDF lives at `public/cv/CV_Iker_Nistal_2026.pdf` — replace it with new versions keeping the same filename.
-
-## Avatar
-
-Place your anime/developer avatar at:
-
-```
-public/images/avatar.webp   # square, min 512×512
-```
-
-If missing, a branded `N` placeholder renders automatically.
-
-## GitHub section
-
-Fetches `https://api.github.com/users/Niistal` client-side. If the API fails, no stats are invented — only **View GitHub Profile** is shown.
-
-## Notes
-
-- Static export: no server features. The OG image is a pre-generated `public/og.png` (1200×630, Bordeaux → purple → blue).
-- GitHub Pages cannot send custom server headers — CSP/Referrer-Policy are enforced via `<meta>` tags in `app/layout.tsx`.
-- No secrets, tokens, private endpoints or analytics by default.
+- [Portfolio](https://niistal.github.io/)
+- [LinkedIn](https://www.linkedin.com/in/ikernistal/)
+- [GitHub](https://github.com/Niistal)
