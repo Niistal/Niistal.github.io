@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local AI assistant instructions (keep out of version control)
+[Aa][Gg][Ee][Nn][Tt][Ss].md
+[Aa][Gg][Ee][Nn][Tt][Ss].local.md
+[Cc][Ll][Aa][Uu][Dd][Ee].md
+[Cc][Ll][Aa][Uu][Dd][Ee].local.md
+[Gg][Ee][Mm][Ii][Nn][Ii].md
+.github/copilot-instructions.md
+.github/agents/*.agent.md
+# Retain templates and examples shipped with skill packages
+!**/skills/**/templates/**
+!**/skills/**/examples/**
