@@ -109,7 +109,7 @@ function render() {
       )
       .join(
         "",
-      )}</div><div>${detail === "stack" ? "" : `<p>${p[detail]}</p>`}</div><div class="tags">${p.stack.map((x) => `<span>${x}</span>`).join("")}</div><div class="github-line">${p.repo ? `<a class="text-link" href="${p.repo}" target="_blank" rel="noopener">Ver repositorio en GitHub ↗</a>` : `<span>Código privado · disponible bajo petición</span>`}</div>`;
+      )}</div><div>${detail === "stack" ? "" : `<p>${p[detail]}</p>`}</div><div class="tags">${p.stack.map((x) => `<span>${x}</span>`).join("")}</div><div class="github-line">${p.repo ? `<a class="text-link" href="${p.repo}" target="_blank" rel="noopener noreferrer">Ver repositorio en GitHub ↗</a>` : `<span>Código privado · disponible bajo petición</span>`}</div>`;
   document.querySelectorAll("[data-project]").forEach(
     (b) =>
       (b.onclick = () => {
